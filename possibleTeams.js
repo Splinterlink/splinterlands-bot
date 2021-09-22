@@ -71,7 +71,7 @@ let availabilityCheck = (base, toCheck) => toCheck.slice(0, 7).every(v => base.i
 const getBattlesWithRuleset = (ruleset, mana, summoners) => {
     const rulesetEncoded = encodeURIComponent(ruleset);
     console.log(process.env.API)
-    const host = process.env.API || 'https://splinterlands-data-service.herokuapp.com/'
+    const host = process.env.API || 'API'
 //    const host = 'http://localhost:3000/'
     let url = ''
     if (process.env.API_VERSION == 2) {
